@@ -1,0 +1,56 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: grey;
+}
+
+.hero {
+    background: grey;
+    padding: 40px 0;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+}
+
+.menu-section {
+    background:grey;
+    padding: 20px 0;
+}
+
+.menu-buttons button {
+    margin: 5px;
+}
+
+.calendar-section {
+    background: #ffffff;
+    padding: 20px 0;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#date, #time {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.contact-form {
+    background: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer {
+    background: #343a40;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.footer .social-icons a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
