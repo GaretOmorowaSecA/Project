@@ -3,79 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Franchising - GEVS RESTAURANT</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>The Burger Bros</title>
     <link rel="stylesheet" href="franchising.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">GEVS Restaurant</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Jollof Rice</a>
-                                <a class="dropdown-item" href="#">Fried Rice</a>
-                                <a class="dropdown-item" href="#">Egusi</a>
-                                <a class="dropdown-item" href="#">Fufu</a>
-                                <a class="dropdown-item" href="#">Pounded Yam</a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Locations</a></li>
-                        <li class="nav-item"><a class="nav-link" href="franchising.html">Franchising</a></li>
-                    </ul>
-                </div>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="The Burger Bros">
             </div>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Franchising</a></li>
+                    <li><a href="#">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div class="container-fluid bg-dark text-white text-center p-2">
-        <div id="date"></div>
-        <div id="time"></div>
-    </div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Franchising</h1>
+        </div>
+    </section>
 
-    <main>
-        <section class="franchising-info">
-            <h2>Interested in Franchising?</h2>
-            <form class="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-                
-                <label for="message">Briefly describe what interests you in joining the GEVS Restaurant family:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <a href="https://www.doordash.com/en-CA/store/mommy's-kitchen-vaughan-23915749/" class="submit-button">Submit</a>
-            </form>
-        </section>
-    </main>
+    <br>
+    <section id="hero">
+        <h1>Our Menu</h1>
+        <button>Download Full Menu</button>
+    </section>
+    <br>
+    
+    <section id="menu">
+        <h2>Burgers</h2>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSt282LUqxyo1h7tJza-eFGcYVbmXI1c5_zQ&s" alt="Daredevil Burger">
+            <p>Daredevil Burger</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDR5HT7sc11rijoa8-QWU0LsL7Msf5BFo2Qw&s" alt="Bro-B-Q Burger">
+            <p>Bro-B-Q Burger</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg_5fquUgxghQDFBmQFzKchvL88GJbpIot2g&s" alt="Health Freak Burger">
+            <p>Health Freak Burger</p>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMvemfCiUHKoETmP0wjc-jYNtjgSIDOEXanA&s" alt="Amigos Burger">
+            <p>Amigos Burger</p>
+        </div>
+        <h2>Sandwiches</h2>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAl5gDGdppI_IqK1ze4PwzwEqt3ntCjwT3rg&s" alt="Game Changer Sandwich">
+            <p>Game Changer Sandwich</p>
+        </div>
+        
+
+
+    
+
+    <section class="franchising">
+        <div class="container">
+            <div class="franchising-info">
+                <h2>Interested in Franchising?</h2>
+                <p>Get in touch with us.</p>
+                <div class="email">
+                    <i class="fas fa-envelope"></i> theburgerbros.ca@gmail.com
+                </div>
+            </div>
+            <div class="franchising-form">
+                <form action="#">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Briefly describe what interests you in joining The Burger Bros family." required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-menu">
+        <div class="container">
+            <a href="#" class="download-button">Download Now</a>
+        </div>
+    </section>
 
     <footer>
-        <div class="container text-center">
-            <p>&copy; 2024 GEVS Restaurant. All rights reserved.</p>
-            <p>
-                <a href="#" class="text-white mr-2"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
-            </p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="The Burger Bros">
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-email">
+                    <i class="fas fa-envelope"></i> theburgerbros.ca@gmail.com
+                </div>
+            </div>
+            <p>&copy; 2023 The Burger Bros. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="franchising.js"></script>
+    <script src="franchising.js" crossorigin="anonymous"></script>
 </body>
 </html>
