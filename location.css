@@ -136,3 +136,11 @@ footer {
 .footer-logo img {
     max-height: 50px;
 }
+#hero {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url('Screenshot\ \(2\).png');
+    background-size: cover;
+    color: #fff;
+    height: 400px;
+}
