@@ -1,72 +1,182 @@
-
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: grey;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #141414;
+    color: #fff;
 }
 
-nav ul li {
-    margin-left: 1rem;
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+.navbar-brand img {
+    height: 50px;
 }
 
-nav ul li a:hover {
-    color: #ffd700;
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
 }
 
-/* Hero Section */
+.navbar-nav .nav-link:hover {
+    color: #e50914;
+}
+
 .hero {
-    background: grey;
-    padding: 40px 0;
-}
-
-.hero h1 {
-    margin-bottom: 20px;
-}
-
-.menu-section {
-    background:grey;
-    padding: 20px 0;
-}
-
-.menu-buttons button {
-    margin: 5px;
-}
-
-.calendar-section {
-    background: #ffffff;
-    padding: 20px 0;
-}
-
-#calendar {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-#date, #time {
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
     text-align: center;
-    font-size: 1.2em;
-    margin-top: 10px;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+}
+
+.btn-light {
+    background-color: #e50914;
+    color: #fff;
+}
+
+.btn-light:hover {
+    background-color: #d40812;
+}
+
+.btn-primary {
+    background-color: #e50914;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #d40812;
+}
+
+.btn-secondary {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #555;
+}
+
+.franchising-info {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: url('images/franchising-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.franchising-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .contact-form {
-    background: #f8f9fa;
-    padding: 20px 0;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.footer {
-    background: #343a40;
-    color: #ffffff;
-    padding: 10px 0;
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
-.footer .social-icons a {
-    color: #ffffff;
-    margin: 0 10px;
-    text-decoration: none;
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #222;
+    color: #fff;
+}
+
+.contact-form button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.daily-quote {
+    text-align: center;
+    padding: 2rem;
+    background-color: #222;
+    border-top: 1px solid #333;
+}
+
+.daily-quote blockquote {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #e50914;
+}
+
+.specials, .testimonials, .contact-info {
+    padding: 2rem 1rem;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
