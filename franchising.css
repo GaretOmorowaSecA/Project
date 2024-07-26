@@ -1,39 +1,7 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
-    font-family: 'Arial, sans-serif';
-    line-height: 1.6;
-    background-color: #f8f8f8;
-    color: #333;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header */
-header {
-    background-color: #333;
-    padding: 1rem 0;
-    color: white;
-}
-
-header .logo img {
-    max-height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: grey;
 }
 
 nav ul li {
@@ -53,143 +21,52 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: grey;
+    padding: 40px 0;
 }
 
-.hero-content h1 {
-    color: white;
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+.hero h1 {
+    margin-bottom: 20px;
 }
 
-/* Franchising Section */
-.franchising {
-    background-color: white;
-    padding: 2rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+.menu-section {
+    background:grey;
+    padding: 20px 0;
 }
 
-.franchising-info {
-    flex: 1;
-    padding: 1rem;
+.menu-buttons button {
+    margin: 5px;
 }
 
-.franchising-info h2 {
-    color: #c00;
-    margin-bottom: 1rem;
+.calendar-section {
+    background: #ffffff;
+    padding: 20px 0;
 }
 
-.franchising-info .email {
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-    margin-top: 1rem;
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.franchising-info .email i {
-    margin-right: 0.5rem;
-}
-
-.franchising-form {
-    flex: 1;
-    padding: 1rem;
-    background-color: #f8f8f8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-.franchising-form form {
-    display: flex;
-    flex-direction: column;
-}
-
-.franchising-form form input,
-.franchising-form form textarea {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.franchising-form form button {
-    padding: 0.7rem;
-    border: none;
-    background-color: #c00;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.franchising-form form button:hover {
-    background-color: #900;
-}
-
-/* Download Menu Section */
-.download-menu {
-    background-color: #c00;
-    color: white;
+#date, #time {
     text-align: center;
-    padding: 1rem 0;
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
-.download-button {
-    background-color: #000;
-    color: white;
-    padding: 1rem 2rem;
+.contact-form {
+    background: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer {
+    background: #343a40;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.footer .social-icons a {
+    color: #ffffff;
+    margin: 0 10px;
     text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.download-button:hover {
-    background-color: #333;
-}
-
-/* Footer */
-footer {
-    background-color: #000;
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-}
-
-.footer-logo img {
-    max-height: 50px;
-}
-
-.footer-social a {
-    color: white;
-    font-size: 1.5rem;
-    margin: 0 0.5rem;
-    transition: color 0.3s;
-}
-
-.footer-social a:hover {
-    color: #ffd700;
-}
-
-.footer-email {
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-}
-
-.footer-email i {
-    margin-right: 0.5rem;
 }
