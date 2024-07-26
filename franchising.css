@@ -1,56 +1,111 @@
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: grey;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #8B4513; 
+  color: #fff;
+  padding: 1rem;
+  position: relative;
 }
 
 .hero {
-    background: grey;
-    padding: 40px 0;
+  background-image: url(Screenshot\ \(2\).png);
+  color: white;
+  text-align: center;
+  padding: 100px 0;
 }
 
-.hero h1 {
-    margin-bottom: 20px;
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.menu-section {
-    background:grey;
-    padding: 20px 0;
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.menu-buttons button {
-    margin: 5px;
+.franchising-info {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f8f8;
 }
 
-.calendar-section {
-    background: #ffffff;
-    padding: 20px 0;
-}
-
-#calendar {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-#date, #time {
-    text-align: center;
-    font-size: 1.2em;
-    margin-top: 10px;
+.franchising-info h2 {
+  margin: 0 0 1rem 0;
 }
 
 .contact-form {
-    background: #f8f9fa;
-    padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.footer {
-    background: #343a40;
-    color: #ffffff;
-    padding: 10px 0;
+.contact-form label {
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
-.footer .social-icons a {
-    color: #ffffff;
-    margin: 0 10px;
-    text-decoration: none;
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #8B4513; 
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #575757;
+}
+
+footer {
+  background-color: #8B4513; 
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      width: 100%;
+      text-align: right;
+      padding-right: 1rem;
+  }
+  .nav-links li {
+      margin: 1rem 0;
+  }
+  .menu-icon {
+      display: block;
+  }
+}
+
+.show {
+  display: flex !important;
 }
