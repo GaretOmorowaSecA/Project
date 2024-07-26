@@ -1,0 +1,136 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.order-now {
+    background-color: #ff6600;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('hero-background.jpg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.hero-text p {
+    margin: 10px 0 0;
+    font-size: 1.5em;
+}
+
+/* Locations Section Styles */
+.locations {
+    padding: 50px 0;
+}
+
+.location-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.location-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.location-map {
+    flex: 1;
+}
+
+.location-info h2 {
+    margin: 0 0 10px 0;
+}
+
+.location-info p {
+    margin: 5px 0;
+}
+
+.social a {
+    margin-right: 10px;
+    color: #333;
+}
+
+.social a:hover {
+    color: #ff6600;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.footer-social a:hover {
+    color: #ff6600;
+}
