@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     function updateDateTime() {
         const now = new Date();

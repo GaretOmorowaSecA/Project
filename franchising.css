@@ -16,6 +16,8 @@ header {
 
 .navbar-brand img {
     height: 50px;
+    max-height: 50px; /* Ensure logo does not exceed this height */
+    width: auto; /* Maintain aspect ratio */
 }
 
 .navbar-nav .nav-link {
@@ -28,8 +30,9 @@ header {
     color: #e50914;
 }
 
+/* Hero Section */
 .hero {
-    background-image: url('images/hero-background.jpg');
+    background-image: url('hero.jpg'); /* Update this path to your hero background image */
     background-size: cover;
     background-position: center;
     color: white;
@@ -88,10 +91,11 @@ header {
     background-color: #555;
 }
 
+/* Franchising Info */
 .franchising-info {
     text-align: center;
     padding: 4rem 2rem;
-    background-image: url('images/franchising-background.jpg');
+    background-image: url(''); /* Update this path */
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -137,6 +141,7 @@ header {
     transition: background-color 0.3s ease;
 }
 
+/* Daily Quote */
 .daily-quote {
     text-align: center;
     padding: 2rem;
@@ -150,10 +155,12 @@ header {
     color: #e50914;
 }
 
+/* Specials, Testimonials, Contact Info */
 .specials, .testimonials, .contact-info {
     padding: 2rem 1rem;
 }
 
+/* Footer */
 footer {
     background-color: #000;
     color: #fff;
@@ -171,6 +178,7 @@ footer {
     }
 }
 
+/* Animations */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
