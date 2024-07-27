@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burger Bros Menu</title>
+    <title>Pasta Bros Menu</title>
     <link rel="stylesheet" href="menu.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="Gevlg" alt="Burger Bros Logo"> 
+            <a href="home">
+                <img src="Gevlogo.png" alt="GEVS Logo">
+            </a>
         </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
+                <li class="dropdown">
+                    <a href="#menu" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="#Pasta">Pasta</a>
+                        <a href="#sandwiches">Sandwiches</a>
+                        <a href="#side-kicks">Side Kicks</a>
+                    </div>
+                </li>
                 <li><a href="#locations">Locations</a></li>
                 <li><a href="#franchising">Franchising</a></li>
-                <li><a href="#order-now">Order Now</a></li>
+                <li><a href="#order-now" class="order-now-button">Order Now</a></li>
             </ul>
         </nav>
     </header>
@@ -28,24 +37,24 @@
     </section>
     
     <section id="menu">
-        <h2>Burgers</h2>
+        <h2 id="Pasta">Pasta</h2>
         <div class="menu-item">
-            <img src="burger1.png" alt="Daredevil Burger">
-            <p>Daredevil Burger</p>
+            <img src="pasta1.jpg" alt="Beef Ragu Pasta">
+            <p> Beef Ragu Pasta</p>
         </div>
         <div class="menu-item">
-            <img src="burger2.png" alt="Bro-B-Q Burger">
-            <p>Bro-B-Q Burger</p>
+            <img src="burger2.png" alt="Bro-B-Q Pasta">
+            <p>Bro-B-Q Pasta</p>
         </div>
         <div class="menu-item">
-            <img src="burger3.png" alt="Health Freak Burger">
-            <p>Health Freak Burger</p>
+            <img src="burger3.png" alt="Health Freak Pasta">
+            <p>Health Freak Pasta</p>
         </div>
         <div class="menu-item">
-            <img src="burger4.png" alt="Amigos Burger">
-            <p>Amigos Burger</p>
+            <img src="burger4.png" alt="Amigos Pasta">
+            <p>Amigos Pasta</p>
         </div>
-        <h2>Sandwiches</h2>
+        <h2 id="sandwiches">Sandwiches</h2>
         <div class="menu-item">
             <img src="sandwich1.png" alt="Game Changer Sandwich">
             <p>Game Changer Sandwich</p>
