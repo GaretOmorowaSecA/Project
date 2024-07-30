@@ -1,27 +1,40 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const carouselImages = document.querySelector('.carousel-images');
-    const items = Array.from(carouselImages.children);
+    const carouselImages = document.querySelectorAll('.carousel-images');
     
-    // Function to shuffle items
-    function shuffleItems() {
-        // Clone the array to avoid modifying the original order
-        let shuffledItems = items.slice();
-        
-        // Shuffle the array using Fisher-Yates algorithm
-        for (let i = shuffledItems.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffledItems[i], shuffledItems[j]] = [shuffledItems[j], shuffledItems[i]];
+    carouselImages.forEach(carousel => {
+        const items = Array.from(carousel.children);
+
+        function shuffleItems() {
+            let shuffledItems = items.slice();
+            for (let i = shuffledItems.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffledItems[i], shuffledItems[j]] = [shuffledItems[j], shuffledItems[i]];
+            }
+
+            while (carousel.firstChild) {
+                carousel.removeChild(carousel.firstChild);
+            }
+            shuffledItems.forEach(item => carousel.appendChild(item));
         }
-        
-        // Remove all items from the container
-        while (carouselImages.firstChild) {
-            carouselImages.removeChild(carouselImages.firstChild);
+
+        shuffleItems();
+
+        let scrollAmount = 0;
+        const scrollStep = 1;
+        const scrollDelay = 10; 
+
+        function autoScroll() {
+            carousel.scrollLeft += scrollStep;
+            scrollAmount += scrollStep;
+
+            if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
+                scrollAmount = 0;
+                carousel.scrollLeft = 0;
+            }
+
+            requestAnimationFrame(autoScroll);
         }
-        
-        // Append shuffled items to the container
-        shuffledItems.forEach(item => carouselImages.appendChild(item));
-    }
-    
-    // Shuffle items on page load
-    shuffleItems();
+
+        autoScroll();
+    });
 });
