@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Arial, sans-serif';
+    font-family: 'system-ui';
     line-height: 1.6;
     background-color: #f8f8f8;
     color: #333;
@@ -297,7 +297,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #fff;
+    background-color: #cbb5b5;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -408,4 +408,46 @@ footer {
 
 .social-media a:hover {
     color: #ff6347;
+}
+
+#animated-banner {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#animated-banner h1 {
+    display: inline-block;
+    padding-left: 100%;
+    animation: banner-move 15s linear infinite;
+}
+
+@keyframes banner-move {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+#animated-banner h1 {
+    display: inline-block;
+    padding-left: 100%;
+    animation: banner-move 15s linear infinite;
+    animation-play-state: paused;
+}
+
+#animated-banner.animate h1 {
+    animation-play-state: running;
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-left.show {
+    opacity: 1;
+    transform: translateX(0);
 }
