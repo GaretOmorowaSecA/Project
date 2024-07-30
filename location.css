@@ -396,3 +396,16 @@ footer {
     font-size: 0.9em;
     color: #ccc;
 }
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 32px;
+}
+
+.social-media a:hover {
+    color: #ff6347;
+}
