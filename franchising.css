@@ -1,164 +1,188 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #141414;
-    color: #fff;
+    font-family: 'Arial, sans-serif';
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
 header {
-    background-color: #000;
-    color: #fff;
-    padding: 1rem;
+    background-color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand img {
-    height: 50px;
+header .logo img {
+    max-height: 50px;
 }
 
-.navbar-nav .nav-link {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease;
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #e50914;
+nav ul li {
+    margin-left: 1rem;
 }
 
-.hero {
-    background-image: url('images/hero-background.jpg');
-    background-size: cover;
-    background-position: center;
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c00;
+}
+
+.order-now {
+    background-color: #c00;
     color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.order-now:hover {
+    background-color: #900;
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.franchising {
     text-align: center;
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    animation: fadeInUp 1s ease-out;
+.franchising h1 {
+    color: #e60000;
+    font-size: 2em;
 }
 
-.hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+.franchising p {
+    font-size: 1.2em;
 }
 
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+.contact-info {
+    margin: 20px 0;
 }
 
-.btn {
-    border-radius: 4px;
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
+.contact-info .email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2em;
 }
 
-.btn-light {
-    background-color: #e50914;
-    color: #fff;
+.contact-info .icon {
+    font-size: 2em;
+    color: #e60000;
 }
 
-.btn-light:hover {
-    background-color: #d40812;
-}
-
-.btn-primary {
-    background-color: #e50914;
-    color: #fff;
-}
-
-.btn-primary:hover {
-    background-color: #d40812;
-}
-
-.btn-secondary {
-    background-color: #333;
-    color: #fff;
-}
-
-.btn-secondary:hover {
-    background-color: #555;
-}
-
-.franchising-info {
-    text-align: center;
-    padding: 4rem 2rem;
-    background-image: url('images/franchising-background.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.franchising-info h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.contact-form {
+form {
     max-width: 600px;
     margin: 0 auto;
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.contact-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
 }
 
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #555;
-    border-radius: 4px;
-    background-color: #222;
+form button {
+    background-color: #e60000;
     color: #fff;
-}
-
-.contact-form button {
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
     border: none;
-    border-radius: 4px;
+    padding: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 1.2em;
 }
 
-.daily-quote {
-    text-align: center;
-    padding: 2rem;
-    background-color: #222;
-    border-top: 1px solid #333;
-}
 
-.daily-quote blockquote {
-    font-size: 1.25rem;
-    font-style: italic;
-    color: #e50914;
-}
-
-.specials, .testimonials, .contact-info {
-    padding: 2rem 1rem;
-}
 
 footer {
-    background-color: #000;
+    background-color: #333;
     color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.follow-us {
+    text-align: center;
+}
+
+.follow-us p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 32px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ff6347;
 }
 
 @media (max-width: 768px) {
@@ -172,11 +196,94 @@ footer {
 }
 
 @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Order Now button styles */
+.order-now-button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.order-now-button:hover {
+    background-color: #cc7a00;
+}
+#hero {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url('hero.jpg');
+    background-size: cover;
+    color: #fff;
+    height: 300px;
+    background-position: center;
+    font-size: 55px;
+    text-align: center;
+}
+
+#hero button {
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: #cc7a00;
 }
