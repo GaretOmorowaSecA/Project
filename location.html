@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Burger Bros - Locations</title>
+    <title>Pasta Bros - Locations</title>
     <link rel="stylesheet" href="location.css">
-    <script src="location.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="The Burger Bros">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Franchising</a></li>
-                    <li><a href="#" class="order-now">Order Now</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <a href="home">
+                <img src="Gevlogo.png" alt="GEVS Logo">
+            </a>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#menu" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="#Nigerian Cuisine"> African Cuisine</a>
+                        <a href="#Middle Eastern Cuisine">Middle Eastern Cuisine</a>
+                        <a href="#side-kicks">Side Kicks</a>
+                    </div>
+                </li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#franchising">Franchising</a></li>
+                <li><a href="#order-now" class="order-now-button">Order Now</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Welcome to The Burger Bros</h1>
-            <p>Find your nearest location</p>
-        </div>
+    <section id="hero" class="fade-in-left">
+        <h1>Our Locations</h1>
     </section>
 
     <section class="locations">
@@ -46,7 +51,7 @@
                     <div class="social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="mailto:theburgerbros.ca@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:pastabros.ca@gmail.com"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="location-map">
@@ -64,34 +69,36 @@
                     <div class="social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="mailto:theburgerbros.ca@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:pastabros.ca@gmail.com"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="location-map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.4262311824916!2d-79.65741968450241!3d43.60611817912282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b36f2bc6507e7%3A0x48951b00b1c6ea69!2sCentral%20Parkway%20Mall%2C%204665%20Central%20Pkwy%20E%2C%20Mississauga%2C%20ON%20L4Z%202V4%2C%20Canada!5e0!3m2!1sen!2sus!4v1622511228385!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-            
-            <!-- Add more location cards here -->
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="logo.png" alt="The Burger Bros">
+        <div class="footer-content">
+            <img src="Gevlogo.png" alt="GEVS Restaurant Logo" class="footer-logo">
+            <div class="follow-us">
+                <p>FOLLOW US</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/yourpage" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/yourpage" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
-                <div class="footer-social">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-                <div class="footer-email">
-                    <i class="fas fa-envelope"></i> theburgerbros.ca@gmail.com
+                <div class="contact">
+                    <a href="mailto:pastabros.ca@gmail.com">pastabros.ca@gmail.com</a>
                 </div>
             </div>
-            <p>&copy; 2023 The Burger Bros. All rights reserved.</p>
         </div>
+        <p class="footer-copy">&copy; 2024 GEVS Restaurant. All rights reserved.</p>
     </footer>
+    <script src="location.js"></script>
 </body>
 </html>
