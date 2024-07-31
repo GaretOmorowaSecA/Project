@@ -3,70 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEVS Resturant</title>
-    <link rel="stylesheet" href="resturant.css">
+    <title>GEVS Restaurant</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <h1>GEVS Resturant</h1>
+            <div class="logo">
+                <img src="Gevlogo.png" alt="GEVS Restaurant Logo">
+            </div>
             <div class="menu-icon" id="menu-icon">
                 &#9776;
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">Menu &#9662;</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">jollof rice</a></li>
-                        <li><a href="#">fried rice</a></li>
-                        <li><a href="#">egusi</a></li>
-                        <li><a href="#">fufu</a></li>
-                        <li><a href="#">pounded</a></li>
-                    </ul>
-                </li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Catering</a></li>
                 <li><a href="#">Locations</a></li>
                 <li><a href="#">Franchising</a></li>
+                <li><a href="#" class="order-now">Order Now</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="hero">
             <h2>Welcome to GEVS</h2>
-            <p>The best resturant in town!</p>
+            <p>The best restaurant in town!</p>
             <button onclick="location.href='order.html'">Order Now</button>
         </section>
-        <section class="features">
-            <div class="feature">
-                <img src="Jollof_Rice_with_Stew.jpeg" alt="jollof rice">
-                <h3>Fresh Ingredients</h3>
-                <p>Only the freshest ingredients go into our burgers.</p>
+        <section class="menu-download">
+            <h2>Download Our Menu</h2>
+            <a href="#" class="download-button">Download Now</a>
+        </section>
+        <section class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <p class="review-text">"The food was amazing! Will definitely come back!"</p>
+                <p class="review-author">- John Doe</p>
             </div>
-            <div class="feature">
-                <img src="fried rice.jpeg" alt="fried rice">
-                <h3>Fast Delivery</h3>
-                <p>Get your meals delivered hot and fast.</p>
-            </div>
-            <div class="feature">
-                <img src="egusi.jpeg" alt="egusi">
-                <h3>Great Taste</h3>
-                <p>Experience the taste of perfection with every bite.</p>
-            </div>
-            <div class="feature">
-                <img src="fufu.jpeg" alt="fufu">
-                <h3>The Other Guys</h3>
-                <p>Try our other great offerings!</p>
-            </div>
-            <div class="feature">
-                <img src="pounded yam.jpeg" alt="pounded yam">
-                <h3>Shake It</h3>
-                <p>Delicious shakes to complement your meal.</p>
+            <div class="review">
+                <p class="review-text">"Excellent service and cozy atmosphere."</p>
+                <p class="review-author">- Jane Smith</p>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 GEVS Resturant. All rights reservedhgfcv .</p>
+        <div class="footer-content">
+            <h2>GEVS Restaurant</h2>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>Email: gevsrestaurant@example.com</p>
+        </div>
+        <p>&copy; 2024 GEVS Restaurant. All rights reserved.</p>
     </footer>
-    <script src="resturant.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>
