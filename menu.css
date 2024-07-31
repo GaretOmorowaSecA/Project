@@ -112,6 +112,7 @@ nav ul li .dropbtn:hover {
     font-size: 55px;
     text-align: center;
     animation: fall-in 1s ease-out; 
+    font-family:'Times New Roman', Times, serif
 }
 
 @keyframes fall-in {
@@ -246,7 +247,7 @@ nav ul li .dropbtn:hover {
     align-items: center; 
 }
 footer {
-    background-color: #000;
+    background-color: #333;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -304,4 +305,29 @@ footer {
 
 .social-media a:hover {
     color: #ff6347;
+}
+.more-menu {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.more-menu p {
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.more-menu button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.more-menu button:hover {
+    background-color: #cc7a00;
 }

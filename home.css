@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links li a.order-now {
+    background-color: #e74c3c;
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: url('hero.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
+.menu-download {
+    text-align: center;
+    padding: 2rem;
+    background-color: #d32f2f;
+    color: white;
+}
+
+.menu-download h2 {
+    margin: 0 0 1rem;
+}
+
+.download-button {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.customer-reviews {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f8f8;
+}
+
+.customer-reviews h2 {
+    margin: 0 0 1rem;
+}
+
+.review {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.review-text {
+    font-style: italic;
+}
+
+.review-author {
+    text-align: right;
+    margin-top: 1rem;
+    color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer-content .social-media {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-content .social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: right;
+        padding-right: 1rem;
+    }
+    .nav-links li {
+        margin: 1rem 0;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
+
+.show {
+    display: flex !important;
+}
