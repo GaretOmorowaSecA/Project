@@ -64,7 +64,6 @@ nav ul li .dropbtn:hover {
     border-radius: 4px;
 }
 
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -90,25 +89,7 @@ nav ul li .dropbtn:hover {
     display: block;
 }
 
-
-.order-now-button {
-    background-color: #ff9900;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.order-now-button:hover {
-    background-color: #cc7a00;
-}
-
-
+/* Hero Section */
 #hero {
     text-align: center;
     padding: 50px 0;
@@ -153,7 +134,7 @@ nav ul li .dropbtn:hover {
     transform: scale(1.1);
 }
 
-
+/* Main Content */
 #menu, #side-kicks {
     padding: 20px;
     text-align: center;
@@ -166,12 +147,13 @@ main {
     margin: 0 auto;
 }
 
+/* Franchising Section */
 .franchising {
     text-align: center;
 }
 
 .franchising h1 {
-    color: #e60000;
+    color: #ff9900;
     font-size: 2em;
 }
 
@@ -179,6 +161,7 @@ main {
     font-size: 1.2em;
 }
 
+/* Contact Info */
 .contact-info {
     margin: 20px 0;
 }
@@ -193,9 +176,10 @@ main {
 
 .contact-info .icon {
     font-size: 2em;
-    color: #e60000;
+    color: #ff9900;
 }
 
+/* Form Styles */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -213,7 +197,7 @@ form textarea {
 }
 
 form button {
-    background-color: #e60000;
+    background-color: #ff9900;
     color: #fff;
     border: none;
     padding: 10px;
@@ -221,8 +205,7 @@ form button {
     font-size: 1.2em;
 }
 
-
-
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
@@ -256,14 +239,15 @@ footer {
     margin: 10px 0;
 }
 
-.social-icons img {
-    width: 30px;
-    height: 30px;
+.social-icons a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
 }
 
-.contact a {
-    color: #fff;
-    text-decoration: none;
+.social-icons a:hover {
+    color: #e60000;
 }
 
 .footer-copy {
@@ -272,77 +256,7 @@ footer {
     color: #ccc;
 }
 
-.social-media {
-    margin: 20px 0;
-}
-
-.social-media a {
-    margin: 0 10px;
-    color: #fff;
-    font-size: 32px;
-    transition: color 0.3s;
-}
-
-.social-media a:hover {
-    color: #ff6347;
-}
-
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1.2rem;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-    border-radius: 4px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Order Now button styles */
+/* Order Now Button */
 .order-now-button {
     background-color: #ff9900;
     color: white;
@@ -359,3 +273,32 @@ footer {
 .order-now-button:hover {
     background-color: #cc7a00;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+  
