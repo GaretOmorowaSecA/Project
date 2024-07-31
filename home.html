@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEVS Restaurant</title>
+    <title>Pasta Bros - Home</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="Gevlogo.png" alt="GEVS Logo">
+            </a>
+        </div>
         <nav>
-            <div class="logo">
-                <img src="Gevlogo.png" alt="GEVS Restaurant Logo">
-            </div>
-            <div class="menu-icon" id="menu-icon">
-                &#9776;
-            </div>
-            <ul class="nav-links" id="nav-links">
+            <ul>
                 <li><a href="home.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
+                <li class="dropdown">
+                    <a href="menu.html" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="#Nigerian Cuisine"> African Cuisine</a>
+                        <a href="#Middle Eastern Cuisine">Middle Eastern Cuisine</a>
+                        <a href="#side-kicks">Side Kicks</a>
+                    </div>
+                </li>
                 <li><a href="location.html">Locations</a></li>
                 <li><a href="franchising.html">Franchising</a></li>
-                <li><a href="https://www.ubereats.com/ca/store/mommys-kitchens/7w2sTTP0Q-2wn-dYfwIH9w?diningMode=DELIVERY&ps=1&sc=SEARCH_SUGGESTION" class="order-now">Order Now</a></li>
+                <li><a href="https://www.ubereats.com/ca/store/mommys-kitchens/7w2sTTP0Q-2wn-dYfwIH9w?diningMode=DELIVERY&ps=1&sc=SEARCH_SUGGESTION" class="order-now-button">Order Now</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h2>Welcome to GEVS</h2>
-            <p>The best restaurant in town!</p>
-            <button onclick="location.href='order.html'">Order Now</button>
+        <section id="hero" class="fade-in-left">
+            <h1>Welcome to Our Restaurant</h1>
+        </section>
         </section>
         <section class="menu-download">
             <h2>Download Our Menu</h2>
@@ -49,14 +54,23 @@
     </main>
     <footer>
         <div class="footer-content">
-            <h2>GEVS Restaurant</h2>
-            <div class="social-media">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+            <img src="Gevlogo.png" alt="GEVS Restaurant Logo" class="footer-logo">
+            <div class="follow-us">
+                <p>FOLLOW US</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/yourpage" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/yourpage" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="contact">
+                    <a href="mailto:pastabros.ca@gmail.com">pastabros.ca@gmail.com</a>
+                </div>
             </div>
-            <p>Email: gevsrestaurant@example.com</p>
         </div>
-        <p>&copy; 2024 GEVS Restaurant. All rights reserved.</p>
+        <p class="footer-copy">&copy; 2024 GEVS Restaurant. All rights reserved.</p>
     </footer>
     <script src="home.js"></script>
 </body>
