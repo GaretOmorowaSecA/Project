@@ -1,18 +1,4 @@
 /* General Styles */
-body {
-    font-family: 'Arial, sans-serif';
-    line-height: 1.6;
-    background-color: #f8f8f8;
-    color: #333;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -88,6 +74,32 @@ nav ul li .dropbtn:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.order-now-button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.order-now-button:hover {
+    background-color: #cc7a00;
+}
+
 
 /* Hero Section */
 #hero {

@@ -1,10 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-
+/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -56,7 +50,6 @@ nav ul li .dropbtn:hover {
     border-radius: 4px;
 }
 
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -83,6 +76,13 @@ nav ul li .dropbtn:hover {
 }
 
 
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 .order-now-button {
     background-color: #ff9900;
     color: white;
@@ -100,7 +100,6 @@ nav ul li .dropbtn:hover {
     background-color: #cc7a00;
 }
 
-
 #hero {
     text-align: center;
     padding: 50px 0;
@@ -112,7 +111,7 @@ nav ul li .dropbtn:hover {
     font-size: 55px;
     text-align: center;
     animation: fall-in 1s ease-out; 
-    font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif;
 }
 
 @keyframes fall-in {
@@ -145,7 +144,6 @@ nav ul li .dropbtn:hover {
     background-color: #cc7a00;
     transform: scale(1.1);
 }
-
 
 #menu, #side-kicks {
     padding: 20px;
@@ -189,7 +187,6 @@ nav ul li .dropbtn:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 .carousel-prev, .carousel-next {
     position: absolute;
     top: 50%;
@@ -211,6 +208,7 @@ nav ul li .dropbtn:hover {
 .carousel-next {
     right: 10px;
 }
+
 .menu-item {
     display: inline-block;
     margin: 10px;
@@ -246,6 +244,35 @@ nav ul li .dropbtn:hover {
     flex-direction: column;
     align-items: center; 
 }
+
+.more-menu {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.more-menu p {
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.more-menu button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.more-menu button:hover {
+    background-color: #cc7a00;
+}
+
+
+/* Footer Styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -288,11 +315,13 @@ footer {
     color: #fff;
     text-decoration: none;
 }
+
 .footer-copy {
     margin-top: 20px;
     font-size: 0.9em;
     color: #ccc;
 }
+
 .social-media {
     margin: 20px 0;
 }
@@ -305,29 +334,4 @@ footer {
 
 .social-media a:hover {
     color: #ff6347;
-}
-.more-menu {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.more-menu p {
-    font-style: italic;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.more-menu button {
-    background-color: #ff9900;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.more-menu button:hover {
-    background-color: #cc7a00;
 }
