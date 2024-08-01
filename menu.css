@@ -302,18 +302,19 @@ footer {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     margin: 10px 0;
 }
 
-.social-icons img {
-    width: 30px;
-    height: 30px;
+.social-icons a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
 }
 
-.contact a {
-    color: #fff;
-    text-decoration: none;
+.social-icons a:hover {
+    color: #e60000;
 }
 
 .footer-copy {
@@ -322,19 +323,6 @@ footer {
     color: #ccc;
 }
 
-.social-media {
-    margin: 20px 0;
-}
-
-.social-media a {
-    margin: 0 10px;
-    color: #fefefe;
-    font-size: 32px;
-}
-
-.social-media a:hover {
-    color: #ff6347;
-}
 <<<<<<< Updated upstream
 =======
 .more-menu {

@@ -237,96 +237,54 @@ button:hover {
 /* ====== Footer ====== */
 footer {
     background-color: #333;
-    color: white;
-    padding: 2rem 0;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-}
-
-.footer-logo img {
-    max-height: 50px;
-}
-
-footer .container {
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-footer p {
-    margin: 5px 0;
-}
-
-footer a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #ddd; 
-}
-
-footer .social a {
-    color: white; 
-    margin: 0 10px;
-    font-size: 24px; 
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-footer .social a:hover {
-    color: #ddd; 
-}
-
-footer .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer .footer-logo {
+.footer-logo {
     width: 150px;
     margin-bottom: 20px;
 }
 
-footer .follow-us {
+.follow-us {
     text-align: center;
 }
 
-footer .follow-us p {
+.follow-us p {
     margin: 5px 0;
 }
 
-footer .social-icons {
+.social-icons {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin: 10px 0;
 }
 
-footer .social-icons img {
-    width: 30px;
-    height: 30px;
+.social-icons a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
 }
 
-footer .contact a {
-    color: #fff;
-    text-decoration: none;
+.social-icons a:hover {
+    color: #e60000;
 }
 
-footer .footer-copy {
+.footer-copy {
     margin-top: 20px;
     font-size: 0.9em;
     color: #ccc;
 }
+
 
 /* ====== Additional Styles ====== */
 .social-media {
