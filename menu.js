@@ -38,3 +38,16 @@ document.addEventListener('DOMContentLoaded', function () {
         autoScroll();
     });
 });
+function searchMenu() {
+    let input = document.getElementById('search-bar').value.toLowerCase();
+    let items = document.querySelectorAll('.carousel-item');
+
+    items.forEach(item => {
+        let text = item.innerText.toLowerCase();
+        if (text.includes(input)) {
+            item.style.display = '';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
