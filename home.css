@@ -25,6 +25,11 @@ header .logo img {
     max-height: 60px; 
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -51,6 +56,7 @@ nav ul li .dropbtn:hover {
     border-radius: 4px;
 }
 
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -75,24 +81,36 @@ nav ul li .dropbtn:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-
 #hero {
     text-align: center;
     padding: 50px 0;
-    background: url('background.jpg') no-repeat center center/cover;
+    background-image: url('g1.jpg');
+    background-size: cover;
+    color: #fff;
+    height: 300px;
+    background-position: center;
+    font-size: 55px;
+    text-align: center;
+    animation: fall-in 1s ease-out; 
+}
+
+#hero button {
+    background-color: #ff9900;
+    border: none;
     color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-#hero img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
+#hero button:hover {
+    background-color: #cc7a00;
 }
 
 .customer-reviews {
@@ -148,8 +166,50 @@ nav ul li .dropbtn:hover {
 
 footer {
     background-color: #333;
-    color: white;
-    text-align: center;
+    color: #fff;
     padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.follow-us {
+    text-align: center;
+}
+
+.follow-us p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #e60000;
+}
+
+.footer-copy {
     margin-top: 20px;
+    font-size: 0.9em;
+    color: #ccc;
 }
