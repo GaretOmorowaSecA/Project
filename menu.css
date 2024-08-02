@@ -16,16 +16,7 @@ header .logo a {
 header .logo img {
     max-width: 100%;
     height: auto;
-<<<<<<< HEAD
-    max-height: 60px; /* Adjust this value as needed */
-=======
     max-height: 60px; 
-}
-
-nav {
-    display: flex;
-    align-items: center;
->>>>>>> fda7a7eb0d6bcab5f9a6145646e2fd1b1a163fa7
 }
 
 nav ul {
