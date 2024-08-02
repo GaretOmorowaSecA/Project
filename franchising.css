@@ -1,127 +1,85 @@
-/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #141414;
-    color: #fff;
+    background-color: #f8f9fa;
+    color: #212529;
 }
 
-
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-    text-decoration: none;
-    color: #000;
+.navbar-brand img {
+    height: 50px;
+    max-height: 50px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link.btn {
+    padding: 0.5rem 1.5rem;
     font-weight: bold;
+    margin-left: 1rem;
 }
 
-/* Hero Section */
 .hero {
-    background-image: url('hero.jpg'); /* Update this path to your hero background image */
+    background-image: url('burger-hero.jpg'); /* Ensure the image file is in the same directory or correct path */
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    animation: fadeInUp 1s ease-out;
+    padding: 150px 0;
 }
 
 .hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 10px 20px;
 }
 
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.btn {
-    border-radius: 4px;
-    padding: 0.75rem 2rem;
-    font-size: 1rem;
-}
-
-.btn-light {
-    background-color: #e50914;
-    color: #fff;
-}
-
-.btn-light:hover {
-    background-color: #d40812;
-}
-
-.btn-primary {
-    background-color: #e50914;
-    color: #fff;
-}
-
-.btn-primary:hover {
-    background-color: #d40812;
-}
-
-.btn-secondary {
-    background-color: #333;
-    color: #fff;
-}
-
-.btn-secondary:hover {
-    background-color: #555;
-}
-
-/* Franchising Info */
 .franchising-info {
     text-align: center;
     padding: 4rem 2rem;
-    background-image: url(''); /* Update this path */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    animation: fadeIn 2s ease-in-out;
 }
 
 .franchising-info h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #e50914;
+}
+
+.franchising-info p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #212529;
 }
 
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #ffffff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
+.contact-form .form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
     padding: 0.75rem;
     margin-bottom: 1rem;
-    border: 1px solid #555;
-    border-radius: 4px;
-    background-color: #222;
-    color: #fff;
 }
 
 .contact-form button {
@@ -130,72 +88,22 @@ nav a {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-/* Daily Quote */
-.daily-quote {
-    text-align: center;
-    padding: 2rem;
-    background-color: #222;
-    border-top: 1px solid #333;
-}
-
-.daily-quote blockquote {
-    font-size: 1.25rem;
-    font-style: italic;
-    color: #e50914;
-}
-
-/* Specials, Testimonials, Contact Info */
-.specials, .testimonials, .contact-info {
-    padding: 2rem 1rem;
-}
-
-/* Footer */
-footer {
-    background-color: #000;
+    background-color: #e50914;
     color: #fff;
+}
+
+.contact-form button:hover {
+    background-color: #d40812;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #212529;
     text-align: center;
     padding: 1rem;
+    border-top: 1px solid #e9ecef;
 }
 
-@media (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1.2rem;
-    }
-}
-
-/* Animations */
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-header .logo a {
-    display: flex;
-    align-items: center;
-}
-
-header .logo img {
-    max-width: 100%;
-    height: auto;
-    max-height: 60px; /* Adjust this value as needed */
+footer a {
+    color: #212529;
 }
