@@ -1,21 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const menuIcon = document.getElementById("menu-icon");
-    const navLinks = document.getElementById("nav-links");
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the dropdown button and the dropdown content
+    const dropbtn = document.querySelector('.dropbtn');
+    const dropdownContent = document.querySelector('.dropdown-content');
 
-    menuIcon.addEventListener("click", () => {
-        navLinks.classList.toggle("show");
-    });  
+    // Toggle the dropdown menu on click
+    dropbtn.addEventListener('click', function(event) {
+        event.stopPropagation();
+        dropdownContent.classList.toggle('show');
+    });
+
+    // Close the dropdown menu if clicked outside of it
+    window.addEventListener('click', function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            if (dropdownContent.classList.contains('show')) {
+                dropdownContent.classList.remove('show');
+            }
+        }
+    });
 });
-const banner = document.getElementById('animated-banner');
-    if (banner) {
-        banner.classList.add('animate');
-    }
-
-    const heroSection = document.getElementById('hero');
-    if (heroSection) {
-        // Use setTimeout to delay the addition of the 'show' class
-        setTimeout(() => {
-            heroSection.classList.add('show');
-        }, 100); // Delay in milliseconds (100ms for a quick delay)
-    }
-;
