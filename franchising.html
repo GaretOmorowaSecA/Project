@@ -3,84 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEVS Restaurant</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>GEVS Restaurant - Franchising</title>
+    <link rel="stylesheet" href="franchising.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container">
-                <a href="index.html" class="navbar-brand">
-                    <img src="Gevlogo.png" alt="GEVS Restaurant Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Jollof Rice</a>
-                                <a class="dropdown-item" href="#">Fried Rice</a>
-                                <a class="dropdown-item" href="#">Egusi</a>
-                                <a class="dropdown-item" href="#">Fufu</a>
-                                <a class="dropdown-item" href="#">Pounded Yam</a>
-                            </div>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#">Locations</a></li>
-                        <li class="nav-item"><a class="nav-link" href="franchising.html">Franchising</a></li>
-                        <li class="nav-item"><a class="nav-link btn btn-danger text-white" href="#">Order now</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="logo">
+            <img src="Gevlogo.png" alt="The Burger Bros Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Franchising</a></li>
+                <li><a href="#" class="order-now">Order Now</a></li>
+            </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <div class="hero-content text-center">
-            <h1>FRANCHISING</h1>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="hero.jpg" alt="Franchising Image 1">
+                <div class="text-overlay">
+                    <h1>Become a Part of GEVS Family</h1>
+                    <p>Join our successful franchise network today!</p>
+                    <a href="#benefits" class="cta-button">Learn More</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="Toronto.jpg" alt="Franchising Image 2">
+                <div class="text-overlay">
+                    <h1>Grow with Us</h1>
+                    <p>Opportunities available in multiple locations.</p>
+                    <a href="#benefits" class="cta-button">Learn More</a>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="res 1.webp" alt="Franchising Image 3">
+                <div class="text-overlay">
+                    <h1>Support and Guidance</h1>
+                    <p>We provide comprehensive support for our franchisees.</p>
+                    <a href="#benefits" class="cta-button">Learn More</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <main>
-        <section class="franchising-info">
-            <h2>INTERESTED IN FRANCHISING?</h2>
+    <section class="benefits" id="benefits">
+        <h2>Why Franchise with GEVS?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <i class="fas fa-chart-line"></i>
+                <h3>Proven Business Model</h3>
+                <p>Our established business model ensures your success.</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-hands-helping"></i>
+                <h3>Comprehensive Support</h3>
+                <p>Receive training and ongoing support from our team.</p>
+            </div>
+            <div class="benefit-item">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Marketing Assistance</h3>
+                <p>Benefit from our national and local marketing campaigns.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Success Stories</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial-item">
+                <img src="fran 1.jpg" alt="Testimonial 1">
+                <blockquote>"Joining GEVS has been the best decision. The support is fantastic!"</blockquote>
+                <p>- John Doe, Franchisee</p>
+            </div>
+            <div class="testimonial-item">
+                <img src="fran 3.webp" alt="Testimonial 2">
+                <blockquote>"GEVS provides everything you need to succeed as a franchisee."</blockquote>
+                <p>- Jane Smith, Franchisee</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <h2>Steps to Become a Franchisee</h2>
+        <div class="process-steps">
+            <div class="step">
+                <h3>Step 1</h3>
+                <p>Submit your application.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2</h3>
+                <p>Meet with our team and discuss opportunities.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3</h3>
+                <p>Complete the training program.</p>
+            </div>
+            <div class="step">
+                <h3>Step 4</h3>
+                <p>Open your GEVS franchise!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What is the initial investment?</h3>
+            <p>The initial investment varies based on location and size.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do I need prior experience?</h3>
+            <p>No, we provide comprehensive training and support.</p>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="contact-details">
+            <h2>Interested in Franchising?</h2>
             <p>Get in touch with us.</p>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Briefly describe what interests you in joining the GEVS Restaurant family" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </section>
-    </main>
+        </div>
+        <form>
+            <input type="text" name="name" placeholder="Name">
+            <div class="email-input">
+                <input type="email" name="email" placeholder="Email">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Briefly describe what interests you in joining GEVS family."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="download-menu">
+        <h2>Download Our Menu</h2>
+        <button>Download Now</button>
+    </section>
+
+    <section class="locations-map">
+        <h2>Our Locations</h2>
+        <div class="map-container">
+            <!-- Embed Google Map or Interactive Map Here -->
+        </div>
+    </section>
 
     <footer>
-        <div class="container text-center">
-            <p>&copy; 2024 GEVS Restaurant. All rights reserved.</p>
-            <p>
-                <a href="#" class="text-dark mr-2"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
-            </p>
+        <div class="footer-content">
+            <img src="Gevlogo.png" alt="GEVS">
+            <p>Follow us:</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>Email: GEVS.ca@gmail.com</p>
+            <p>&copy; 2024 GEVS. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="franchising.js"></script>
 </body>
 </html>
