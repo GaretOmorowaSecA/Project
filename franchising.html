@@ -16,7 +16,6 @@
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="location.html">Locations</a></li>
                 <li><a href="franchising.html">Franchising</a></li>
                 <li><a href="https://www.ubereats.com/ca/store/mommys-kitchens/7w2sTTP0Q-2wn-dYfwIH9w?diningMode=DELIVERY&ps=1&sc=SEARCH_SUGGESTION" class="order-now">Order Now</a></li>
             </ul>
@@ -25,7 +24,7 @@
 
     <section class="hero">
         <div class="slideshow-container">
-            <div class="mySlides fade">
+            <div class="mySlides slide-up">
                 <img src="g1.jpg" alt="Franchising Image 1">
                 <div class="text-overlay">
                     <h1>Become a Part of GEVS Family</h1>
@@ -33,15 +32,15 @@
                     <a href="#benefits" class="cta-button">Learn More</a>
                 </div>
             </div>
-            <div class="mySlides fade">
-                <img src="afr.webp" alt="Franchising Image 2">
+            <div class="mySlides slide-left">
+                <img src="f.jpg" alt="Franchising Image 2">
                 <div class="text-overlay">
                     <h1>Grow with Us</h1>
                     <p>Opportunities available in multiple locations.</p>
                     <a href="#benefits" class="cta-button">Learn More</a>
                 </div>
             </div>
-            <div class="mySlides fade">
+            <div class="mySlides slide-right">
                 <img src="fran 3.webp" alt="Franchising Image 3">
                 <div class="text-overlay">
                     <h1>Support and Guidance</h1>
@@ -128,28 +127,24 @@
             <h2>Interested in Franchising?</h2>
             <p>Get in touch with us.</p>
         </div>
-        <form>
-            <input type="text" name="name" placeholder="Name">
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Name" required>
             <div class="email-input">
-                <input type="email" name="email" placeholder="Email">
+                <input type="email" name="email" placeholder="Email" required>
                 <i class="fas fa-envelope"></i>
             </div>
-            <input type="text" name="subject" placeholder="Subject">
-            <textarea name="message" placeholder="Briefly describe what interests you in joining GEVS family."></textarea>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Briefly describe what interests you in joining GEVS family." required></textarea>
             <button type="submit">Submit</button>
         </form>
+        <div id="responseMessage" class="response-message" style="display:none;">
+            <p>Thank you for your interest in franchising with GEVS! We will get back to you soon.</p>
+        </div>
     </section>
 
     <section class="download-menu">
         <h2>Download Our Menu</h2>
         <button>Download Now</button>
-    </section>
-
-    <section class="locations-map">
-        <h2>Our Locations</h2>
-        <div class="map-container">
-            <!-- Embed Google Map or Interactive Map Here -->
-        </div>
     </section>
 
     <footer>
