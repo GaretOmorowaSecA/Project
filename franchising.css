@@ -79,6 +79,9 @@ nav ul li .dropbtn:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.logo img {
+    height: 50px;
+}
 
 .hero {
     position: relative;
@@ -96,6 +99,9 @@ nav ul li .dropbtn:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.order-now-button:hover {
+    background-color: #cc7a00;
 }
 
 .text-overlay {
@@ -318,9 +324,8 @@ form button:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #d1b0ab;
     color: #fff;
-<<<<<<< HEAD
     padding: 20px;
     text-align: center;
 }
@@ -330,40 +335,10 @@ footer img {
 }
 
 .social-icons {
-=======
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-logo {
-    width: 150px;
-    margin-bottom: 20px;
-}
-
-.follow-us {
-    text-align: center;
-}
-
-.follow-us p {
-    margin: 5px 0;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
->>>>>>> 90aed79092e930ab2be7ed30a728123d59900ee4
     margin: 10px 0;
 }
 
 .social-icons a {
-<<<<<<< HEAD
     color: #fff;
     font-size: 1.5em;
     margin: 0 10px;
@@ -376,95 +351,4 @@ footer img {
 
 footer p {
     margin: 5px 0;
-=======
-    color: white;
-    font-size: 1.5em;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #e60000;
->>>>>>> 90aed79092e930ab2be7ed30a728123d59900ee4
-}
-
-.footer-copy {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #ccc;
-}
-
-
-/* ====== Additional Styles ====== */
-.social-media {
-    margin: 20px 0;
-}
-
-.social-media a {
-    margin: 0 10px;
-    color: #fff;
-    font-size: 32px;
-}
-
-.social-media a:hover {
-    color: #ff6347;
-}
-
-#animated-banner {
-    background-color: #ff9900;
-    color: white;
-    padding: 10px;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-#animated-banner h1 {
-    display: inline-block;
-    padding-left: 100%;
-    animation: banner-move 15s linear infinite;
-}
-
-@keyframes banner-move {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
-}
-
-#animated-banner h1 {
-    display: inline-block;
-    padding-left: 100%;
-    animation: banner-move 15s linear infinite;
-    animation-play-state: paused;
-}
-
-#animated-banner.animate h1 {
-    animation-play-state: running;
-}
-
-.fade-in-left {
-    opacity: 0;
-    transform: translateX(-100px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.fade-in-left.show {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.order-now-button {
-    background-color: #ff9900;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.order-now-button:hover {
-    background-color: #cc7a00;
 }
