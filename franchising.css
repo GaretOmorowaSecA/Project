@@ -79,6 +79,31 @@ nav ul li .dropbtn:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.order-now-button {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.order-now-button:hover {
+    background-color: #cc7a00;
+}
+
 .logo img {
     height: 50px;
 }
@@ -100,9 +125,7 @@ nav ul li .dropbtn:hover {
     height: 100%;
     object-fit: cover;
 }
-.order-now-button:hover {
-    background-color: #cc7a00;
-}
+
 
 .text-overlay {
     position: absolute;
@@ -324,7 +347,7 @@ form button:hover {
 }
 
 footer {
-    background-color: #d1b0ab;
+    background-color:#333;
     color: #fff;
     padding: 20px;
     text-align: center;
