@@ -3,19 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joy of Eating</title>
+    <title>The Burger Bros</title>
     <link rel="stylesheet" href="home1.css">
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1>Are you ready to stop dieting and rediscover the <span class="highlight">Joy of Eating?</span></h1>
-            <p>Weight-inclusive nutrition therapy, intuitive eating coaching, and body image healing.</p>
-            <button class="cta-button">Tell Me More</button>
+        <div class="logo">
+            <a href="home.html">
+                <img src="OF1.jpg" alt="GEVS Logo">
+            </a>
         </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="menu.html" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="#Nigerian Cuisine">African Cuisine</a>
+                        <a href="#Middle Eastern Cuisine">Middle Eastern Cuisine</a>
+                        <a href="#side-kicks">Side Kicks</a>
+                    </div>
+                </li>
+                <li><a href="location.html">Locations</a></li>
+                <li><a href="franchising.html">Franchising</a></li>
+                <li><a href="https://www.ubereats.com/ca/store/mommys-kitchens/7w2sTTP0Q-2wn-dYfwIH9w?diningMode=DELIVERY&ps=1&sc=SEARCH_SUGGESTION" class="order-now-button">Order Now</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
+        <section id="hero" class="fade-in-left">
+            <h1>Welcome to Hanafi</h1>
+        </section>
+
+        <!-- Merged Content Starts Here -->
+        <section class="header-content">
+            <h1>Are you ready to stop dieting and rediscover the <span class="highlight">Joy of Eating?</span></h1>
+            <p>Weight-inclusive nutrition therapy, intuitive eating coaching, and body image healing.</p>
+            <button class="cta-button">Tell Me More</button>
+        </section>
+
         <section class="about">
             <div class="about-content">
                 <h2>We help people squash the food police and unlearn the lies that diet culture has sold so you can eat with confidence.</h2>
@@ -24,13 +51,52 @@
                 <button class="about-button">Meet the Team</button>
             </div>
             <div class="about-image">
-                <img src="path-to-your-image.jpg" alt="Delicious Food">
+                <img src="https://www.africanbites.com/wp-content/uploads/2019/12/IMG_0557.jpg" alt="Delicious Food">
             </div>
+        </section>
+        <!-- Merged Content Ends Here -->
+
+        <section class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <div class="reviews">
+                <div class="review">
+                    <p class="review-text">Great value and taste</p>
+                    <p class="review-author">- Jeremy Sirois</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">Amazing burgers! Though I wish they added a little more sauce on their Broski burger.</p>
+                    <p class="review-author">- Sujana Pun</p>
+                </div>
+                <div class="review">
+                    <p class="review-text">It was so good I recommend a million times</p>
+                    <p class="review-author">- Catherine Fontana</p>
+                </div>
+            </div>
+            <a href="menu.pdf" class="download-button">Download Our Menu</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Joy of Eating. All rights reserved.</p>
+        <div class="footer-content">
+            <img src="OF2.jpg" alt="GEVS Restaurant Logo" class="footer-logo">
+            <div class="follow-us">
+                <p>FOLLOW US</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/yourpage" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/yourpage" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="contact">
+                    <a href="mailto:omorowagaret@gmail.com">hanafi.ca@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2024 Hanafi. All rights reserved.</p>
     </footer>
+
+    <script src="home.js"></script>
 </body>
 </html>
