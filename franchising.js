@@ -19,3 +19,47 @@ function showSlides() {
 
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
+
+// Form submission handling
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from actually submitting
+
+    // Show the response message
+    document.getElementById('responseMessage').style.display = 'block';
+
+    // Hide the form
+    document.getElementById('contactForm').style.display = 'none';
+
+    // Show the popup modal
+    let modal = document.getElementById('verificationModal');
+    modal.style.display = "block";
+
+    // Close the modal when the user clicks the 'X'
+    document.querySelector('.close').onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Close the modal when the user clicks outside of it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Automatically hide the modal after a few seconds if desired
+    setTimeout(function() {
+        modal.style.display = "none";
+    }, 5000); // Hide after 5 seconds
+});
+
+// Popup Modal HTML
+const modalHtml = `
+<div id="verificationModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>A verification email has been sent to you.</p>
+    </div>
+</div>
+`;
+document.body.insertAdjacentHTML('beforeend', modalHtml);
+
